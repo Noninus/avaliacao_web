@@ -7,7 +7,7 @@ public class Projects {
 
 	String name;
 	String customer;
-	BigDecimal valueOfProject;
+	String valueOfProject;
 	Date dtBegin;
 	Date dtEnd;
 	
@@ -25,11 +25,11 @@ public class Projects {
 	public void setCustomer(String customer) {
 		this.customer = customer;
 	}
-	public BigDecimal getValueOfProject() {
+	public String getValueOfProject() {
 		return valueOfProject;
 	}
-	public void setValueOfProject(BigDecimal valueOfProject) {
-		this.valueOfProject = valueOfProject;
+	public void setValueOfProject(String valueOfProject) {
+		this.valueOfProject  = valueOfProject;
 	}
 	public Date getDtBegin() {
 		return dtBegin;

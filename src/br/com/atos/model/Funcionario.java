@@ -7,12 +7,12 @@ public class Funcionario {
 
 	String name;
 	String role;
-	BigDecimal salary;
+	String salary;
 	String manager;
 	String gcm;
-	Projects projects;
-	List<String> skills;
-	List<String> certification;
+	Projects[] projects;
+	String[] skills;
+	String[] certification;
 	
 	
 	public String getName() {
@@ -27,10 +27,10 @@ public class Funcionario {
 	public void setRole(String role) {
 		this.role = role;
 	}
-	public BigDecimal getSalary() {
+	public String getSalary() {
 		return salary;
 	}
-	public void setSalary(BigDecimal salary) {
+	public void setSalary(String salary) {
 		this.salary = salary;
 	}
 	public String getManager() {
@@ -45,23 +45,26 @@ public class Funcionario {
 	public void setGcm(String gcm) {
 		this.gcm = gcm;
 	}
-	public Projects getProjects() {
+	public Projects[] getProjects() {
 		return projects;
 	}
-	public void setProjects(Projects projects) {
+	public void setProjects(Projects[] projects) {
 		this.projects = projects;
 	}
-	public List<String> getSkills() {
+	public String[] getSkills() {
 		return skills;
 	}
-	public void setSkills(List<String> skills) {
+	public void setSkills(String[] skills) {
 		this.skills = skills;
 	}
-	public List<String> getCertification() {
+	public String[] getCertification() {
 		return certification;
 	}
-	public void setCertification(List<String> certification) {
+	public void setCertification(String[] certification) {
 		this.certification = certification;
 	}
+	
+	
+
 	
 }
