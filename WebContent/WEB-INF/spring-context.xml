@@ -13,7 +13,7 @@
 	http://www.springframework.org/schema/tx 
   	http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
 	
-	<context:component-scan base-package="br.com.whitemarket" />
+	<context:component-scan base-package="br.com.atos" />
 	<mvc:annotation-driven />
 	<mvc:default-servlet-handler/>
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">

@@ -4,12 +4,12 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
 	http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
 	version="2.0">
-	<persistence-unit name="market">
+	<persistence-unit name="atos">
 		<!-- provedor/implementacao do JPA -->
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 		<!-- entidade mapeada -->
-		<class>br.com.whitemarket.model.*</class>
-		<class>br.com.whitemarket.dao.JPAItemProdutoDAO</class>
+		<class>br.com.atos.*</class>
+
 		<properties>
 			<!-- dados da conexao -->
 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />

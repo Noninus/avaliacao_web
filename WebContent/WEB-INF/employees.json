@@ -1,0 +1,84 @@
+[
+  {
+    "name": "Renato Garcia",
+    "role": "TI Architect",
+    "salary": "2000,00",
+    "manager": "Marcelo Ricciardi",
+    "gcm": "05",
+    "projects": [
+      {
+        "name": "Portal cadastro NET",
+        "customer": "NET",
+        "valueOfProject": "1.000.000,00",
+        "dtBegin": "2016-11-05T08:15:30-05:00",
+        "dtEnd": "2017-11-05T08:15:30-05:00"
+      }
+    ],
+    "skills": [
+      "java",
+      "javaee",
+      "rest",
+      "graphql",
+      "microservice",
+      "soa",
+      "oracle soa suite"
+    ],
+    "certification": [
+      "Oracle SOA Suite 11g Essentials - Jun 2015",
+      "Oracle Certified Professional, Java SE 7 Programmer - Aug 2014",
+      "ITIL® Foundation Certificate Jun 2013",
+      "Sun Certified Enterprise Architect for the Java Platform Oct 2010",
+      "Sun Certified Associate for Java Platform - Oct 2008",
+      "Sun Certified Business Component Developer for the Java Platform, EE 5 - Nov 2007",
+      "Sun Certified Business Component Developer for the Java Platform, EE 1.3 - Feb 2007",
+      "Sun Certified Web Component Developer for the Java Platform - Oct 2006",
+      "Sun Certified Programmer for the Java Platform - Jun 2006"
+    ]
+  },
+  {
+    "name": "Jose Carlos",
+    "role": "Software Enginner",
+    "salary": "1700,00",
+    "manager": "Marcelo Ricciardi",
+    "gcm": "04",
+    "projects": [
+      {
+        "name": "Fulfillment",
+        "customer": "Multiplus Fidelidade",
+        "valueOfProject": "1.000.000,00",
+        "dtBegin": "2015-11-05T08:15:30-05:00",
+        "dtEnd": "2018-11-05T08:15:30-05:00"
+      }
+    ],
+    "skills": ["java", "javaee", "DevOps"],
+    "certification": ["Sun Certified Programmer for the Java Platform"]
+  },
+  {
+    "name": "Gabriel Luz",
+    "role": "Software Enginner",
+    "salary": "9000,00",
+    "manager": "Marcelo Ricciardi",
+    "gcm": "04",
+    "projects": [
+      {
+        "name": "Fulfillment",
+        "customer": "Multiplus Fidelidade",
+        "valueOfProject": "1.000.000,00",
+        "dtBegin": "2015-11-05T08:15:30-05:00",
+        "dtEnd": "2018-11-05T08:15:30-05:00"
+      }
+    ],
+    "skills": ["java", "javaee"],
+    "certification": ["Sun Certified Programmer for the Java Platform"]
+  },
+  {
+    "name": "Marcelo Ricciari",
+    "role": "Business Solution Manager",
+    "salary": "99999,99",
+    "manager": "Douglas Nascimento",
+    "gcm": "06",
+    "projects": [],
+    "skills": ["Gestão de pessoas", "PMI", "Scrum", "Agile", "DevOps"],
+    "certification": ["CSM - Certified Scrum Master"]
+  }
+]
