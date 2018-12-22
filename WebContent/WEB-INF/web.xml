@@ -34,9 +34,6 @@
 		<servlet-name>default</servlet-name>
 		<url-pattern>*.png</url-pattern>
 	</servlet-mapping>
-	<session-config>
-		<session-timeout>10</session-timeout>
-	</session-config>
 	<filter>
      <filter-name>SetCharacterEncodingFilter</filter-name>
      <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>

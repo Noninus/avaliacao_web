@@ -8,12 +8,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 <meta charset="ISO-8859-1">
 <title>Avaliação - ATOS</title>
 </head>
@@ -61,13 +57,24 @@
  </c:forEach>
   </tbody>
 </table>
-<select class="form-control">
- <c:forEach items="${skillsList}" var="skillsList">
-       		 <option value="${skillsList}">${skillsList }</option>
-        </c:forEach>
-</select>
-<script>
+<div class="container" id="checkboxes">
+  <h2>Filtro por Habilidades</h2>
+  <p>Escolha opções abaixo para filtrar os funcinários: </p>
+  <form action="listaFuncionariosFiltrado" method="post" accept-charset="UTF-8">
+   <c:forEach items="${skillsList}" var="skillsList">
+	     <label class="checkbox-inline">
+      		<input id="checkbox" type="checkbox" value="${skillsList}">${skillsList}
+    	</label>
+  </c:forEach>
+  <br>
+  <br>
 
+  <button type="submit" class="btn btn-primary">Filtrar!</button>
+    <p style="color: red">Para escolher nenhum filtro, não selecione nenhuma opção!</p>
+  </form>
+</div>
+  
+<script>
 	 $('button[id=buttonHabilidades]').on("click", function(){
 		var display =  	$(this).next($("#habilidadesDIV")).css("display");
 		if(display!="none")
@@ -88,7 +95,18 @@
 		    	$(this).next($("#certificadosDIV")).attr("style", "display:");
 		    }
 		});
-
+	 
+	 $(function () {
+		  var checkboxes = $('#checkboxes :checkbox');
+		  checkboxes.click(function (e) {
+			  if ($(this).is(':checked')) {
+				  
+				  $(this).attr('name', 'selecionado');
+			  }else{
+				  $(this).attr('name', '');  
+			  }  
+		  });
+		});
 </script>
 </body>
 </html>
