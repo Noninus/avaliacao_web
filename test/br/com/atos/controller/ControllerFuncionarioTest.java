@@ -53,7 +53,11 @@ public class ControllerFuncionarioTest {
 	    @Test
 	    public void testFilter () throws Exception {
 	        MockHttpServletRequestBuilder builder = MockMvcRequestBuilders.post("/listaFuncionariosFiltrado");
+	        builder.param("selecionado", new String[]{"java"});
 	        this.mockMvc.perform(builder)
-	        	.andExpect(MockMvcResultMatchers.redirectedUrl("/listaFuncionariosFiltrado"));
+	        	.andExpect(MockMvcResultMatchers.status()
+                    .isOk())
+	        	.andReturn()
+	        	.getResponse();
 	    }
 }
